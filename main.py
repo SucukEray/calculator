@@ -58,5 +58,8 @@ for i in range(len(numbersForOperation)):
     if i < len(operatorsForOperation):
         organizedOperationList.append(operatorsForOperation[i])
 
+#Calculate the operation
 operationString = "".join(str(x) for x in organizedOperationList)
 result = eval(operationString)
+
+print(f"{operationString}={result}")
